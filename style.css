@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #faf9f6;
+}
+
+main {
+  display: flex;
+}
+
+.img-section {
+  width: 40%;
+  background-image: url(images/leaf-bg.jpg);
+  height: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.odin-logo {
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5em;
+  font-family: "Norse-Bold";
+  position: relative;
+  top: 250px;
+  background-color: rgba(20, 19, 19, 0.521);
+}
+
+.form-section {
+  width: 60%;
+  height: 1200px;
+}
+
+.form-title {
+  height: 140px;
+  margin-top: 180px;
+  font-weight: bold;
+  margin-left: 40px;
+  font-size: 1.5em;
+}
+
+.form-title p {
+  width: 80%;
+}
+
+.form-input-div {
+  margin-top: 75px;
+  height: 410px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+
+.form-input-div p {
+  font-weight: 500;
+  font-size: 1.75em;
+  margin-left: 40px;
+}
+
+.input-box-container {
+  height: 75%;
+  width: 73%;
+  display: flex;
+}
+
+.input-box-left,
+.input-box-right {
+  width: 50%;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+label {
+  color: #808080;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  width: 80%;
+  border: 2px solid transparent;
+  color: black;
+  font-weight: normal;
+  font-size: 1em;
+  padding-left: 10px;
+  border-color: gray;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+  border-color: blue;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-account {
+  margin-left: 40px;
+  margin-top: 50px;
+  width: 50%;
+}
+
+button {
+  height: 60px;
+  width: 100%;
+  border: 4px solid #596d48;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #596d48;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  border: 4px solid #161b12;
+  background-color: #36432c;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #161b12;
+  color: #161b12;
+}
+
+.form-account p {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.form-account p a {
+  color: #596d48;
+  font-weight: 700;
+  text-decoration: none;
+}
