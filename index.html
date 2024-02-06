@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <main>
+    <form>
       <div class="img-section">
         <div class="odin-logo">
           <img height="145px" src="images/odin-lined.png" alt="" />
@@ -31,63 +31,68 @@
         </div>
         <div class="form-input-div">
           <p>Let's do this!</p>
-          <form class="input-box-container">
+          <div class="input-box-container">
             <div class="input-box-left">
               <div class="form-box">
                 <label for="first-name">First Name</label>
-                <input
-                  type="text"
-                  name="first-name"
-                  required
-                  minlength="4"
-                  maxlength="10"
-                />
+                <input type="text" name="first-name" required minlength="4" />
               </div>
               <div class="form-box">
-                <label for="email">Email</label>
-                <input type="email" name="email" required />
+                <label for="email"
+                  >Email
+                  <input type="email" name="email" required />
+                </label>
               </div>
               <div class="form-box">
-                <label for="password">Password</label>
-                <input type="password" name="password" required />
+                <label for="password"
+                  >Password
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </label>
               </div>
             </div>
             <div class="input-box-right">
               <div class="form-box">
-                <label for="last-name">Last Name</label>
-                <input
-                  type="text"
-                  name="last-name"
-                  required
-                  minlength="4"
-                  maxlength="10"
-                />
+                <label for="last-name"
+                  >Last Name
+                  <input type="text" name="last-name" required minlength="4" />
+                </label>
               </div>
 
               <div class="form-box">
-                <label for="phone-number">Phone Number</label>
-                <input
-                  type="number"
-                  name="phone-number"
-                  required
-                  minlength="0"
-                  maxlength="10"
-                />
+                <label for="phone-number"
+                  >Phone Number
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    required
+                    maxlength="10"
+                  />
+                </label>
               </div>
 
               <div class="form-box">
                 <label for="password">Confirm Password</label>
-                <input type="password" name="password" required />
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="password"
+                  required
+                />
               </div>
             </div>
-          </form>
+          </div>
         </div>
         <div class="form-account">
-          <button type="submit" for="form">Create Account</button>
+          <button type="submit">Create Account</button>
           <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>
-    </main>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
